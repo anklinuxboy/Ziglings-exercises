@@ -61,7 +61,7 @@ fn fixTooSmall(n: u32) MyNumberError!u32 {
     // Otherwise, we return the u32 number.
     return detectProblems(n) catch |err| switch (err) {
         MyNumberError.TooSmall => 10,
-        MyNumberError.TooBig => return err,
+        MyNumberError.TooBig => err,
     };
 }
 
