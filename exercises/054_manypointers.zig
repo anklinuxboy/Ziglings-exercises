@@ -13,7 +13,7 @@
 const std = @import("std");
 
 pub fn main() void {
-    // Take a good look at the array type to which we're coercing
+    // Take a good look at the array type to which w  e're coercing
     // the zen12 string (the REAL nature of strings will be
     // revealed when we've learned some additional features):
     const zen12: *const [21]u8 = "Memory is a resource.";
